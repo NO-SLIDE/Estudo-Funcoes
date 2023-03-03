@@ -50,23 +50,13 @@ let lanches = [
 //EXERCÍCIOS:
 
 //1##Crie uma função que retorne o valor total de todos os lanches.
-
 // function valorTotal(lanches) {
 //   let somaValores = lanches.reduce((acumulador, lanche) => acumulador + lanche.valor, 0);
 //   return somaValores.toFixed(2);
 // }
-
-// let valor = valorTotal(lanches);
-// console.log(`O valor total de todos os lanches é de R$${valor} reais.`);
-
-// function valorTotal(lanches) {
-//   somaValores = 0;
-//   lanches.forEach(lanches => somaValores += lanches.valor);
-//   return somaValores.toFixed(2);
-// }
-
 // let resultado = valorTotal(lanches);
-// console.log(`O valor total dos lanches é de R$${resultado} reais.`)
+// console.log(`O valor total dos lanches é de R$${resultado} reais.`);
+
 //______________________________________________________________________________
 
 //2##Crie uma função que retorne o valor médio dos lanches.
@@ -75,75 +65,53 @@ let lanches = [
 //   let media = somaValores / lanches.length;
 //   return media.toFixed(2);
 // }
-
 // let resultado = valorMedio(lanches);
-// console.log(`O valor médio entre os lanches é de R$${resultado} reais.`)
+// console.log(`O valor total da média dos lanches é de R$${resultado} reais.`);
 
-// function valorMedio(lanches) {
-//   somaValores = 0;
-//   lanches.forEach(lanches => somaValores += lanches.valor);
-//   let media = somaValores / lanches.length;
-//   return media.toFixed(2);
-// }
-
-// let resultado = valorMedio(lanches);
-// console.log(`O valor médio de todos os lanches é de R$${resultado} reais.`)
 //______________________________________________________________________________
 
 //3##Crie uma função que retorne a lista de lanches que contêm um ingrediente 
-//especificado pelo usuário.
 // function listaIngredientes(nomeLanche) {
 //   let lanche = lanches.find(lanche => lanche.nome === nomeLanche);
-//   if(lanche) {
+//   if(lanches) {
 //     return lanche.ingredientes.slice(0, -1).join(", ") + " e " + lanche.ingredientes.slice(-1);
 //   } else {
-//     return "Lanche não encontrado na nossa lista";
+//     return "O lanche não está na minha lista";
 //   }
 // }
-
-// let lista = listaIngredientes("Cheeseburguer");
-// console.log(`O meu lanche favorito tem os seguintes ingredientes ${lista}.`)
-
-// function listaIngredientes(nomeLanche) {
-//   let lanche = lanches.find(lanche => lanche.nome === nomeLanche);
-//   if(lanche) {
-//     return lanche.ingredientes.slice(0, -1).join(", ") + " e " + lanche.ingredientes.slice(-1);
-//   }
-// }
-
-// let lista = listaIngredientes("X-Egg");
+// let lista = listaIngredientes("X-Frango");
 // let nomeLanche = "X-Frango";
-// console.log(`O meu lanche favorito é o ${nomeLanche} que tem os seguintes ingredientes ${lista}.`)
+// console.log(`O meu lanche favorito é o ${nomeLanche} e seus ingredientes são ${lista}.`)
 
-// function listaIngredientes(nomeLanche) {
-//   let lista = "";
-//   lanches.forEach(lanche => {
-//     if(lanche.nome === nomeLanche) {
-//       lista = lanche.ingredientes.slice(0, -1).join(", ") + " e " + lanche.ingredientes.slice(-1);
-//     } 
-//   });
-//   return lista;
-// }
-
-// let lista = listaIngredientes("X-Calabresa");
-// let nomeLanche = "X-Calabresa";
-// console.log(`O meu lanche favorito é o ${nomeLanche} que contêm os seguintes ingredientes ${lista}.`)
 //______________________________________________________________________________
 
 //4##Crie uma função que retorne a lista de lanches ordenada por valor, do mais 
-//barato para o mais caro.
 // function ordenarValor(lista) {
 //   return lista.sort((a, b) => a.valor - b.valor);
 // }
-
 // let listaOrdenada = ordenarValor(lanches);
 // console.log(listaOrdenada);
 
+
 //5##Crie uma função que retorne a lista de lanches ordenada por nome, em ordem 
 //alfabética.
+// function ordenarPorNome(lanches) {
+//   return lanches.sort((a, b) => a.nome.localeCompare(b.nome));
+// }
+// console.log(ordenarPorNome(lanches));
+//______________________________________________________________________________
 
 //6##Crie uma função que receba um valor máximo e retorne a lista de lanches cujo 
 //valor é menor ou igual a esse valor.
+// function filtarPorValorMaximo(valorMaximo) {
+//   return lanches.filter(lanche => lanche.valor <= valorMaximo);
+// }
+// let valorMaximo = 12.90;
+// let lanchesFiltrados = filtarPorValorMaximo(valorMaximo);
+// console.log(lanchesFiltrados);
+
+
+
 
 //7##Crie uma função que retorne o nome e o valor do lanche mais caro.
 
