@@ -290,18 +290,52 @@
 //=========================================================================================
 //3. Função que recebe um inteiro positivo e teste para saber se ele é primo ou não. 
 //Faça um script que recebe um inteiro n e mostra todos os primos, de 1 até n.
+//##Com Retorno...
+// function isPrime(n1) {
+//     if(n1 < 2) {
+//         return `O número ${primo} não é um número primo.`;
+//     }
+//     for(let i = 2; i * i <= n1; i++) {
+//         if(n1 % i === 0) {
+//             return `O número ${primo} não é um número primo.`;
+//         }
+//     }
+//     return `O número ${primo} é um número primo.`
+// }
+// const primo = 3;
+// console.log(isPrime(primo))
 
+//----------------------------------------------------------------------------->
+//##Sem Retorno...
+// function isPrime(n1) {
+//     if(n1 < 2) {
+//         console.log(`O número ${primo} não é um número primo.`);
+//     }
+//     for(let i = 2; i * i <= n1; i++) {
+//         if(n1 % i === 0) {
+//             console.log(`O número ${primo} não é um número primo.`);
+//         }
+//     }
+//     console.log(`O número ${primo} é um número Primo.`);
+// }
+// const primo = 3;
+// console.log(isPrime(primo))
 
-
-
-
-
-
-
-
-
-
-
+//----------------------------------------------------------------------------->
+//##Com Arrow Function...
+// const isPrime = (n1) => {
+//     if(n1 < 2) {
+//         console.log(`O número ${primo} não é um número primo.`);
+//     }
+//     for(let i = 2; i * i <= n1; i++) {
+//         if(n1 % i === 0) {
+//             console.log(`O número ${primo} não é um número primo.`);
+//         }
+//     }
+//     console.log(`O número ${primo} é um número Primo.`);
+// }
+// const primo = 3;
+// console.log(isPrime(primo))
 
 
 //=========================================================================================
@@ -460,6 +494,7 @@
 // }
 
 // // console.log("Eu faço aniversário no mês de " + mesesDoAno(4))
+
 
 
 
