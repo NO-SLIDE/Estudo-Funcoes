@@ -415,6 +415,22 @@
 // const b = 8;
 // const resultado = operacoesMatematica(a, b)
 
+//Ou
+
+// function operacaoMatematica(n1, n2) {
+//     const somar = n1 + n2;
+//     const subtrair = n1 - n2;
+//     const multiplicar = n1 * n2;
+//     const dividir = n1 / n2;
+//     console.log(`O resultados da soma entre ${n1} + ${n2} = ${somar}.`);
+//     console.log(`O resultados da subtração entre ${n1} - ${n2} = ${subtrair}.`);
+//     console.log(`O resultados da multiplicação entre ${n1} * ${n2} = ${multiplicar}.`);
+//     console.log(`O resultados da divisão entre ${n1} / ${n2} = ${dividir.toFixed(2)}.`);
+// }
+// const n1 = 2;
+// const n2 = 3;
+// operacaoMatematica(n1, n2);
+
 //----------------------------------------------------------------------------->
 //##Com Retorno...
 // function operacoesMatematica(n1, n2) {
@@ -451,9 +467,12 @@
 
 // operacaoMatematica(5, 3);
 
+
+
 //=========================================================================================
 //7. Função que recebe um número (de 1 a 12) e retorne o mês correspondente como 
-//uma string
+//uma string:
+//Com Retorno...
 // function mesesAno(n1) {
 //     if(n1 == 1) {
 //         return "Janeiro";
@@ -495,13 +514,137 @@
 
 // // console.log("Eu faço aniversário no mês de " + mesesDoAno(4))
 
+//Ou 
 
+// function mesesDoAno(mes) {
+//     if(mes == 1) {
+//         return "Janeiro";
+//     }
+//     if(mes == 2) {
+//         return "Fevereiro";
+//     }
+//     if(mes == 3) {
+//         return "Março";
+//     }
+//     if(mes == 4) {
+//         return "Abril";
+//     }
+//     if(mes == 5) {
+//         return "Maio";
+//     }
+//     if(mes == 6) {
+//         return "Junho";
+//     }
+//     if(mes == 7) {
+//         return "Julho";
+//     }
+//     if(mes == 8) {
+//         return "Agosto";
+//     }
+//     if(mes == 9) {
+//         return "Setembro";
+//     }
+//     if(mes == 10) {
+//         return "Outubro";
+//     }
+//     if(mes == 11) {
+//         return "Novembro";
+//     }
+//     if(mes == 12) {
+//         return "Dezembro";
+//     }
+// }
+// const mes = 4;
+// const resultado = mesesDoAno(mes);
+// console.log(`Meu aniversário é no mês de ${resultado}.`)
 
+//----------------------------------------------------------------------------->
+//##Sem Retorno...
+// function mesesDoAno(mes) {
+//     if(mes == 1) {
+//         console.log("Meu aniversário é no mês de Janeiro.");
+//     }
+//     if(mes == 2) {
+//         console.log("Meu aniversário é no mês de Fevereiro.");
+//     }
+//     if(mes == 3) {
+//         console.log("Meu aniversário é no mês de Março.");
+//     }
+//     if(mes == 4) {
+//         console.log("Meu aniversário é no mês de Abril.");
+//     }
+//     if(mes == 5) {
+//         console.log("Meu aniversário é no mês de Maio.");
+//     }
+//     if(mes == 6) {
+//         console.log("Meu aniversário é no mês de Junho.");
+//     }
+//     if(mes == 7) {
+//         console.log("Meu aniversário é no mês de Julho.");
+//     }
+//     if(mes == 8) {
+//         console.log("Meu aniversário é no mês de Agosto.");
+//     }
+//     if(mes == 9) {
+//         console.log("Meu aniversário é no mês de Setembro.");
+//     }
+//     if(mes == 10) {
+//         console.log("Meu aniversário é no mês de Outubro.");
+//     }
+//     if(mes == 11) {
+//         console.log("Meu aniversário é no mês de Novembro.");
+//     }
+//     if(mes == 12) {
+//         console.log("Meu aniversário é no mês de Dezembro.");
+//     }
+// }
+// const mes = 4;
+// const resultado = mesesDoAno(mes);
+// mesesDoAno(resultado)
 
-
-
-
-
+//----------------------------------------------------------------------------->
+//##Com Arrow Function...
+// const mesesDoAno = (mes) => {
+//     if(mes == 1) {
+//         console.log("Meu aniversário é no mês de Janeiro.");
+//     }
+//     if(mes == 2) {
+//         console.log("Meu aniversário é no mês de Fevereiro.");
+//     }
+//     if(mes == 3) {
+//         console.log("Meu aniversário é no mês de Março.");
+//     }
+//     if(mes == 4) {
+//         console.log("Meu aniversário é no mês de Abril.");
+//     }
+//     if(mes == 5) {
+//         console.log("Meu aniversário é no mês de Maio.");
+//     }
+//     if(mes == 6) {
+//         console.log("Meu aniversário é no mês de Junho.");
+//     }
+//     if(mes == 7) {
+//         console.log("Meu aniversário é no mês de Julho.");
+//     }
+//     if(mes == 8) {
+//         console.log("Meu aniversário é no mês de Agosto.");
+//     }
+//     if(mes == 9) {
+//         console.log("Meu aniversário é no mês de Setembro.");
+//     }
+//     if(mes == 10) {
+//         console.log("Meu aniversário é no mês de Outubro.");
+//     }
+//     if(mes == 11) {
+//         console.log("Meu aniversário é no mês de Novembro.");
+//     }
+//     if(mes == 12) {
+//         console.log("Meu aniversário é no mês de Dezembro.");
+//     }
+// }
+// const mes = 4;
+// const resultado = mesesDoAno(mes);
+// mesesDoAno(resultado)
 
 
 
